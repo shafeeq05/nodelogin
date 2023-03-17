@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: gainsboro;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        
+        }
+        div{
+            height: 70vh;
+            width: 50vh;
+            background-color: cyan;
+           border-radius: 10px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        form>input{
+            margin: 2vh;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Sign Up</h1>
-
+    
+    <div>
     <form action="/signup" method="POST">
+        <h4>Sign Up</h4>
+
         <input type="text" name="regname" placeholder="User Name" required>
+        <input type="password" name="email" placeholder="E-mail" required>
+        <input type="password" name="phno" placeholder="phone number" required>
         <input type="password" name="regpwd" placeholder="Enter Password" required>
-        <input type="submit" value="Login">
+        <input type="password" name="regpwd" placeholder="Conform Password" required>
+        <input type="submit" value="Login" class="btn btn-primary">
+        <a href="./login">If you have already an account</a>
 
 
     </form>
-
+</div>
 </body>
 </html>
