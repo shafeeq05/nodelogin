@@ -1,7 +1,6 @@
 const express=require('express')
 const mongo=require('mongoose')
 const body_parser=require('body-parser')
-const sign=require('./source/mongo')
 const app=express()
 const { urlencoded } = require('body-parser')
 app.use(body_parser(urlencoded({extended:true})))
@@ -14,11 +13,21 @@ mongo.connect("mongodb://127.0.0.1:27017/Login")
     console.log(e);
 })
 
+app.use(express.static(__dirname+'/public'))
+app.use(express.static('uploads'))
 const loginrouter=require('./router/L_router')
 const signuprouter=require('./router/R_router')
+const index=require('./router/index')
+const usrouter = require('./router/users')
 
 app.use('/signup',signuprouter)
-app.use('/login',loginrouter)
+app.use('/',loginrouter)
+app.use('/index',index)
+app.use('/users',usrouter)
+
+app.listen(3000,()=>{
+    console.log('server connected');
+})
 
 
 // app.get('/signup',(req,res)=>{
@@ -59,9 +68,7 @@ app.use('/login',loginrouter)
 
 
 
-app.listen(3000,()=>{
-    console.log('server connected');
-})
+
 
 
 

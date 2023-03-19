@@ -11,7 +11,7 @@ const signupscheema= new scheema({
     phoneNo:{
         type:String
     },
-    password:{
+    password:{        
         type:String
     },
 })

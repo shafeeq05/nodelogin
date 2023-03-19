@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="users.css" type="text/css">
+</head>
+<body>
+    <h2>Users</h2>
+    <div class="first">
+     <%data.forEach(x=>{ %>
+        
+            <div class="card">
+                <img src="<%=x.picture %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= x.name %></h5>
+                  <p class="card-text"><%= x.bio %></p>
+                  <a href="#" class="btn btn-primary">Go profile</a>
+                </div>
+              </div>
+            
+     <% }) %>
+    <!-- class="card" -->
+</div>
+   
+</body>
+</html>

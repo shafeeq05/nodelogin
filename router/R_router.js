@@ -10,7 +10,7 @@ router.post('/',async(req,res)=>{
         await new sign({
             name:req.body.regname,
             email:req.body.email,
-            phone:req.body.phno,
+            phoneNo:req.body.phno,
             password:req.body.regpwd
             
         }).save()
