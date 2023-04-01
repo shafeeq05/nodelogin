@@ -14,7 +14,7 @@
     <form action="/index" method="POST"  enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Enter your name" required class="form-control">
         <input type="text" name="place" placeholder="Enter your place" required class="form-control">
-        <input type="tel" name="phone" placeholder="Enter your phone number" class="form-control">
+        <input type="tel" name="phone" value="<%=phone%>" placeholder="Enter your phone number" readonly class="form-control">
         <input type="file" name="picture" id="" class="form-control" value="picture">
         <input type="text" name="email" placeholder="Enter your email"class="form-control">
         <textarea name="bio" id=""  placeholder="bio" class="form-control"></textarea>

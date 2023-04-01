@@ -13,17 +13,18 @@
 <body>
     <div class="main">
     <form action="/" method="POST" >
-        <h4>Login</h4><br>
+        <h3 class="h4">Login</h3><br>
         <input type="text" name="usrname"class="form-control" placeholder="User Name" required>
         <input type="password" name="pwd" placeholder="Enter Password" required class="form-control">
         <input type="submit" value="Login" class="btn btn-primary" id="btn"><br>
+        <!-- <button type="submit" >login</button> -->
         <a href="./signup">create new account</a>
        
     </form>
     <div class="error">
-        <% if(error=="please check your user name and password"){ %>
+
             <p class="text-danger"><%=error %></p>
-            <% } %>
+          
         </div>
     
     </div>

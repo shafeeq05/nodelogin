@@ -1,12 +1,15 @@
 
 body{
     height: 100vh;
-    background-color: white;
+    background:url(pexels-pixabay-36717.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius:50vh;
 }
+
+
 .main{
     height: 60%;
     aspect-ratio: 1;
@@ -14,7 +17,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(204, 225, 244);
     position: absolute;
     top: 20vh;
     border-radius:10vh
@@ -24,10 +26,12 @@ div>form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
-div>form>h4{
+.h4{
     text-align: center;
-    color: rgb(135, 133, 131);
+    color: rgb(255, 255, 255);
+    
     /* position: relative; */
     /* top: 10vh; */
 }
@@ -51,4 +55,9 @@ div>form>a{
     justify-content: center;
 }a{
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#btn{
+    width: 100%;
 }

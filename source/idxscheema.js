@@ -20,6 +20,9 @@ email:{
 },
 bio:{
     type:String
+},
+logid:{
+    type:String
 }
 })
 module.exports=mongo.model('userdetail',scheema)

@@ -8,11 +8,11 @@ const signupscheema= new scheema({
     email:{
         type:String
     },
-    phoneNo:{
+    phone:{
         type:String
     },
     password:{        
         type:String
-    },
+    }
 })
 module.exports=mongo.model('login',signupscheema)
